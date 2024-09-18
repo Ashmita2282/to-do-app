@@ -1,8 +1,7 @@
-// src/App.jsx
 import React, { useState } from "react";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
-// import "./App.css"
+
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -38,13 +37,7 @@ const App = () => {
     setError(""); // Clear error
   };
 
-  // const addTodo = () => {
-  //   if (!newTask) return; // Do not add empty tasks
-  //   setTodos([...todos, { id: Date.now(), task: newTask, completed: false }]);
-  //   setNewTask("");
-  // };
-
-  // Mark a to-do item as completed
+  
   const toggleComplete = (id) => {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -74,7 +67,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
+    <div className="min-h-screen bg-gradient-to-r hover:from-green-300 hover:to-blue-600 from-pink-300 to-blue-400 p-10">
       <Header />
       <div className="mt-6">
         <input

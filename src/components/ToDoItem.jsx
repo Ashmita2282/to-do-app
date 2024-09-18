@@ -1,4 +1,3 @@
-// src/components/ToDoItem.jsx
 import React from "react";
 import "../App.css"
 
@@ -38,7 +37,7 @@ const ToDoItem = ({
               onChange={() => toggleComplete(todo.id)}
             />
             <span
-              className={`ml-2 ${
+              className={`italic ml-2 ${
                 todo.completed ? "line-through text-gray-500" : ""
               }`}
             >
